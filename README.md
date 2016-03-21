@@ -1,6 +1,6 @@
 # phalcon-datatable
 
-Класс для работы с Datatables.js на серверв. Написан с использованием PHP-фреймворка [Phalcon 2](http://phalconphp.com).
+Класс для работы с [Datatables.js](https://www.datatables.net/) на сервере. Написан с использованием PHP-фреймворка [Phalcon 2](http://phalconphp.com).
 
 ## Примеры
 
@@ -35,7 +35,7 @@ else
     return $this->response->setJsonContent($datatable->toObjects()->toArray());
 ```
 
-Больше примеров в папке `examples`.
+Больше примеров в папке [`examples`](https://github.com/atnartur/Phalcon-datatable/tree/master/examples).
 
 ## Автор
 
