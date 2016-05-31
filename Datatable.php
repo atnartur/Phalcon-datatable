@@ -187,4 +187,4 @@ class Datatable{
 		$this->_limit();
 		return $this->qb->getQuery()->execute();
 	}
-}s
+}
