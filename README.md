@@ -2,6 +2,24 @@
 
 Класс для работы с [Datatables.js](https://www.datatables.net/) на сервере. Написан с использованием PHP-фреймворка [Phalcon 2](http://phalconphp.com).
 
+## Установка
+
+Дополните свой файл `composer.json` следующим образом:
+
+```
+{
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/atnartur/Phalcon-datatable"
+        }
+    ],
+    "require": {
+        "atnartur/phalcon-datatable": "1.0.0"
+    }
+}
+```
+
 ## Примеры
 
 Базовый пример:
