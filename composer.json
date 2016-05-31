@@ -17,5 +17,10 @@
     	"email": "i@atnartur.ru",
     	"issues": "https://github.com/atnartur/Phalcon-datatable/issues",
     	"source": "https://github.com/atnartur/Phalcon-datatable"
+    },
+    "autoload": {
+        "psr-4": {
+            "Datatable\\": "./"
+        }
     }
 }
