@@ -1,0 +1,21 @@
+{
+	"name": "phalcon-datatable",
+	"description": "Server-side library for working with Datatables.js",
+	"version": "1.0.0",
+	"keywords": ["phalcon", "datatables"],
+	"homepage": "https://github.com/atnartur/Phalcon-datatable",
+	"license": "MIT",
+	"authors": [
+        {
+            "name": "Artur Atnagulov",
+            "email": "i@atnartur.ru",
+            "homepage": "http://atnartur.ru",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+    	"email": "i@atnartur.ru",
+    	"issues": "https://github.com/atnartur/Phalcon-datatable/issues",
+    	"source": "https://github.com/atnartur/Phalcon-datatable"
+    }
+}
