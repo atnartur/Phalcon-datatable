@@ -1,5 +1,5 @@
 {
-	"name": "phalcon-datatable",
+	"name": "atnartur/phalcon-datatable",
 	"description": "Server-side library for working with Datatables.js",
 	"version": "1.0.0",
 	"keywords": ["phalcon", "datatables"],
