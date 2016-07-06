@@ -5,9 +5,11 @@
 
 namespace App\Modules\Admin\Controllers;
 
+use Datatable\Datatable;
+
 class ExampleController extends \Phalcon\Mvc\Controller {
 	public function indexAction(){
-		$datatable = new \Datatable('example'); // инициализация класса для таблицы example
+		$datatable = new Datatable('example'); // инициализация класса для таблицы example
 		// указываем, какие колонки нам необходимы
 		$datatable->set('columns', array(
 			'id', 

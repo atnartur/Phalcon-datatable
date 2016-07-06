@@ -5,9 +5,11 @@
 
 namespace App\Modules\Admin\Controllers;
 
+use Datatable\Datatable;
+
 class UsersController extends \Phalcon\Mvc\Controller{
 	public function indexAction(){
-		$datatable = new \Datatable('users'); // инициализация класса для таблицы users
+		$datatable = new Datatable('users'); // инициализация класса для таблицы users
 
 		// подключение параметров
 

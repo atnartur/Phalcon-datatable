@@ -25,6 +25,8 @@
 Базовый пример:
 
 ```php
+use Datatable\Datatable;
+
 $datatable = new Datatable('users'); // инициализация класса для таблицы users
 
 // подключение параметров
