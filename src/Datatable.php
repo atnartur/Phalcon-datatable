@@ -10,7 +10,7 @@ use Phalcon\Mvc\Model\Query\Builder as QueryBuilder;
 
 class Datatable{
 	/** @var string Неймспейс моделей */
-	public $modelsNamespace = 'App\Models\\';
+	public static $modelsNamespace = 'App\Models\\';
 
 	/** @var string Базовая таблица, из которой будет делаться выборка */
 	private $table;
@@ -65,7 +65,7 @@ class Datatable{
 	 * @return string Возвращает название таблицы вместе с неймспейсом
 	 */
 	function _model_name_with_namespace(){
-		return self::models_namespace . self::camelize($this->table);
+		return self::$modelsNamespace . self::camelize($this->table);
 	}
 
 
