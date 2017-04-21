@@ -10,7 +10,7 @@ use Phalcon\Mvc\Model\Query\Builder as QueryBuilder;
 
 class Datatable{
 	/** @var string Неймспейс моделей */
-	const models_namespace = 'App\Models\\';
+	public $modelsNamespace = 'App\Models\\';
 
 	/** @var string Базовая таблица, из которой будет делаться выборка */
 	private $table;
@@ -34,16 +34,17 @@ class Datatable{
 	private $errors = array();
 
 
-	/** @var Phalcon\Mvc\Model\Query\Builder Экземлпяр Phalcon Query Builder */
+	/** @var \Phalcon\Mvc\Model\Query\Builder Экземлпяр Phalcon Query Builder */
 	public $qb;
 
 	/**
 	 * Конструктор
 	 *
 	 * @param string $table название таблицы без namespace в нижнем регистре
+     * @param string $class класс query builder`а
 	 */
-	function __construct($table){
-		$this->qb = new QueryBuilder();
+	function __construct($table, $class = QueryBuilder::class){
+		$this->qb = new $class();
 		$this->table = $table;
 		$this->qb->from($this->_model_name_with_namespace());
 	}
